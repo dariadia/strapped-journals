@@ -112,3 +112,7 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+.vercel
+backend/data
+backend/build
