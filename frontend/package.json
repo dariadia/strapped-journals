@@ -1,7 +1,6 @@
 {
-  "name": "nextjs-strapi-boilerplate-frontend",
-  "version": "0.0.1",
-  "author": "nirmalya.email@gmail.com",
+  "name": "strapped-journals",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
