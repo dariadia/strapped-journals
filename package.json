@@ -1,26 +1,37 @@
 {
+  "name": "journal-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "dev:frontend": "cd frontend && yarn dev",
-    "build:frontend": "cd frontend && yarn build",
-    "export:frontend": "cd frontend && yarn export",
-    "start:frontend": "cd frontend && yarn start",
-    "release": "release-it"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "devDependencies": {
-    "@release-it/conventional-changelog": "^2.0.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1",
-    "release-it": "^14.2.2"
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.4.5",
+    "strapi-admin": "3.4.5",
+    "strapi-utils": "3.4.5",
+    "strapi-plugin-content-type-builder": "3.4.5",
+    "strapi-plugin-content-manager": "3.4.5",
+    "strapi-plugin-users-permissions": "3.4.5",
+    "strapi-plugin-email": "3.4.5",
+    "strapi-plugin-upload": "3.4.5",
+    "strapi-connector-bookshelf": "3.4.5",
+    "knex": "<0.20.0",
+    "sqlite3": "5.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "author": {
+    "name": "A Strapi developer"
   },
-  "lint-staged": {
-    "*.{js,json,css,md,tsx,ts}": [
-      "prettier --write"
-    ]
-  }
+  "strapi": {
+    "uuid": "10be9f19-af82-4e96-9235-b960eb4e2a70"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
